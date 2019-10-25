@@ -1,7 +1,17 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: black;
+    overflow: hidden;
+}
+
+.video-container {
+    height: 140vh;
+    overflow: scroll;
+}
+
+.logo {
+    margin-left: 12%;
 }
 
 p {
@@ -21,15 +31,17 @@ a:focus {
 }
 
 .navbar {
+    z-index: 999;
     position: fixed;
     left: 0;
     top: 0;
     width: 100vw;
-    padding: 15px 10px;
+    height: 8%;
+    /* padding: 15px 10px; */
     background: #fff;
     border: none;
     border-radius: 0;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,14 +63,18 @@ span {
     display: inline-block;
 }
 
+footer {
+    height: 5%;
+}
 /* ---------------------------------------------------
     HERO
 ----------------------------------------------------- */
 
 .bgimage {
     width:100%;
-    height:50%;
-    background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
+    height:30vh;
+    right: 0;
+    background: url('flow-arts-institute-background.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
@@ -80,11 +96,13 @@ span {
 
 #sidebar {
     position: relative;
-    margin-top: 5%;
+    /* position: fixed; */
+    overflow: hidden;
+    margin-top: 3.5%;
     min-width: 250px;
     max-width: 250px;
-    height: 110vh;
-    background: #7386D5;
+    height: 160vh;
+    background: #473d99;
     color: #fff;
     transition: all 0.3s;
 }
@@ -136,7 +154,7 @@ span {
 
 #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
+    background: #6351ce;
 }
 
 #sidebar .sidebar-header strong {
@@ -217,10 +235,17 @@ a.article:hover {
 
 #content {
     margin-top: 5%;
+    right: 0;
     width: 100%;
+    height: 60vh;
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    overflow: scroll;
+}
+
+.video {
+    margin-bottom: 18%;
 }
 
 /* ---------------------------------------------------
@@ -273,5 +298,6 @@ a.article:hover {
     }
     #sidebarCollapse span {
         display: none;
+        background-color: #6351ce;
     }
 }
