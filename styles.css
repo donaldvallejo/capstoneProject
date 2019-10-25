@@ -57,7 +57,7 @@ span {
 
 .bgimage {
     width:100%;
-    height:55%;
+    height:50%;
     background: url('https://images.unsplash.com/photo-1438109491414-7198515b166b?q=80&fm=jpg&s=cbdabf7a79c087a0b060670a6d79726c');
     background-repeat: no-repeat;
     background-position: center;
@@ -79,12 +79,11 @@ span {
 }
 
 #sidebar {
-    position: fixed;
     position: relative;
     margin-top: 5%;
-    left: 0;
     min-width: 250px;
     max-width: 250px;
+    height: 110vh;
     background: #7386D5;
     color: #fff;
     transition: all 0.3s;
