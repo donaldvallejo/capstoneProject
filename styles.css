@@ -65,8 +65,14 @@ span {
 }
 
 footer {
-    height: 5%;
+    position: absolute;
+    bottom: 0px;
+    height: 3vh;
+    width: 100%;
+    color: white; 
+    background-color: black;
 }
+
 /* ---------------------------------------------------
     HERO
 ----------------------------------------------------- */
