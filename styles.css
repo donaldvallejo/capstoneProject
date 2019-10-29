@@ -27,6 +27,10 @@ body {
     transition: 0.4s;
   }
 
+  .container-fluid {
+      padding-left: 0;
+  }
+
   /* Rotate first bar */
 .change .bar1 {
     -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
@@ -132,7 +136,8 @@ footer {
     width:100%;
     height:100%;
     right: 0;
-    background: url('hero.jpg');
+    top: 20%;
+    background: url('alexa.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size:cover;
